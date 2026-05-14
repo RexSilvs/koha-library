@@ -33,3 +33,13 @@ A Nuxt 3 frontend with Express backend for managing books, users, and borrowing 
 - Clean dashboard layout with navigation
 - Responsive card-based pages
 - Table views for inventory and borrowing history
+
+## Vercel Deployment
+1. Push the root project to GitHub (already done).
+2. Create a new Vercel project from your `koha-library` repository.
+3. Vercel will use `vercel.json` to build the frontend with `npm run generate`.
+4. Add the environment variable `NUXT_PUBLIC_API_BASE` with your backend URL, for example:
+   - `https://your-backend.example.com`
+5. Deploy the frontend to Vercel.
+
+> Note: The `backend/` Express API is not deployed by Vercel in this setup. Host it separately or convert it to serverless endpoints.
